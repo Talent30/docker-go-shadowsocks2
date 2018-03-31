@@ -1,7 +1,5 @@
 # docker-go-shadowsocks2
 
-# docker-go-shadowsocks2
-
 Provides a dockerfile for a shadowsocks server based on the go-shadowsocks2 implementation of shadowsocks (https://shadowsocks.org).
 
 It uses the go-shadowsocks2 binary as entrypoint.
