@@ -7,7 +7,7 @@ It uses the go-shadowsocks2 binary as entrypoint.
 ## Usage
 
 ```
-docker run --rm -p 8443:8443 -p 8443:8443/udp asoberlin/go-shadowsocks2 -cipher AES-256-CFB -password YOUR_PASSWORD -verbose -s :8443
+docker run --rm -p 8443:8443 -p 8443:8443/udp 1995parham/go-shadowsocks2 -cipher AES-256-CFB -password YOUR_PASSWORD -verbose -s :8443
 ```
 
 The following options are available:
