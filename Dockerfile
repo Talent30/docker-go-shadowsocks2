@@ -4,9 +4,9 @@ FROM golang:alpine AS build-env
 
 RUN apk upgrade --update
 RUN apk add --no-cache --virtual build-depns git
-RUN apk del build-depns
 RUN go get -u -v github.com/shadowsocks/go-shadowsocks2
 ENV CGO_ENABLED=0
+RUN apk del build-depns
 
 # Final stage
 FROM alpine
