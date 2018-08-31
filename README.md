@@ -1,6 +1,4 @@
 # docker-go-shadowsocks2
-[![](https://images.microbadger.com/badges/image/1995parham/go-shadowsocks2.svg)](https://microbadger.com/images/1995parham/go-shadowsocks2 "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/1995parham/go-shadowsocks2.svg)](https://microbadger.com/images/1995parham/go-shadowsocks2 "Get your own version badge on microbadger.com")
 
 ## Introduction
 Provides a dockerfile for a shadowsocks server based on the go-shadowsocks2 implementation of shadowsocks (https://shadowsocks.org).
