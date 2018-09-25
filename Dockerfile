@@ -1,6 +1,6 @@
 # Build stage
 # Current go-shadowsocks2 version v0.0.11
-FROM golang:alpine AS build-env
+FROM golang1.11:alpine AS build-env
 
 RUN apk upgrade --update
 RUN apk add --no-cache --virtual build-depns git
