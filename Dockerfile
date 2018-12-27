@@ -12,7 +12,7 @@ RUN go get -u -v github.com/shadowsocks/go-shadowsocks2
 FROM alpine:latest
 RUN apk upgrade --update \
     && apk add bash tzdata \
-RUN rm -rf /var/cache/apk/*
+    && rm -rf /var/cache/apk/*
 
 WORKDIR /app
 COPY --from=builder /go/bin/go-shadowsocks2 /app/
