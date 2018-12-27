@@ -16,4 +16,4 @@ RUN apk upgrade --update \
 
 WORKDIR /app
 COPY --from=builder /go/bin/go-shadowsocks2 /app/
-ENTRYPOINT ["go-shadowsocks2"]
+ENTRYPOINT ["./go-shadowsocks2"]
