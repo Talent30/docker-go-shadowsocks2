@@ -11,7 +11,7 @@ RUN go get -u -v github.com/shadowsocks/go-shadowsocks2
 # Final stage
 FROM alpine:latest
 RUN apk upgrade --update \
-    && apk add bash tzdata \
+    && apk add tzdata \
     && rm -rf /var/cache/apk/*
 
 WORKDIR /app
