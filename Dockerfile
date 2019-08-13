@@ -2,11 +2,12 @@
 # Current go-shadowsocks2 version v0.0.11
 FROM golang:alpine AS builder
 
+ENV GO111MODULE on
+ENV GOPROXY https://goproxy.io
+
 RUN apk apk -U upgrade
 RUN apk add git
 RUN go get -u -v github.com/shadowsocks/go-shadowsocks2
-
-
 
 # Final stage
 FROM alpine:latest
