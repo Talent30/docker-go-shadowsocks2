@@ -3,7 +3,6 @@
 FROM golang:alpine AS builder
 
 ENV GO111MODULE on
-ENV GOPROXY https://goproxy.io
 
 RUN apk apk -U upgrade
 RUN apk add git
