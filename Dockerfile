@@ -10,8 +10,7 @@ RUN apk apk -U upgrade --no-cache \
 
 # Final stage
 FROM alpine:latest
-RUN apk apk -U upgrade \
-    && rm -rf /var/cache/apk/*
+RUN apk apk -U upgrade --no-cache \
 
 WORKDIR /app
 COPY --from=builder /go/bin/go-shadowsocks2 /app/
