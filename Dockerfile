@@ -4,9 +4,9 @@ FROM golang:alpine AS builder
 
 ENV GO111MODULE on
 
-RUN apk apk -U upgrade
-RUN apk add git
-RUN go get -u -v github.com/shadowsocks/go-shadowsocks2
+RUN apk apk -U upgrade \
+    && apk add git \
+    && go get -u -v github.com/shadowsocks/go-shadowsocks2
 
 # Final stage
 FROM alpine:latest
