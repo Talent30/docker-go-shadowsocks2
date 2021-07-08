@@ -1,5 +1,5 @@
 # Build stage
-# Current go-shadowsocks2 version v0.1
+# Current go-shadowsocks2 version v0.1.5
 FROM golang:alpine AS builder
 
 ENV GO111MODULE on
