@@ -10,7 +10,7 @@ RUN apk -U upgrade --no-cache \
 
 # Final stage
 FROM alpine:latest
-RUN apk -U upgrade --no-cache \
-    && WORKDIR /app
+RUN apk -U upgrade --no-cache
+WORKDIR /app
 COPY --from=builder /go/bin/go-shadowsocks2 /app/
 ENTRYPOINT ["./go-shadowsocks2"]
