@@ -13,4 +13,4 @@ FROM alpine:latest
 RUN apk -U upgrade --no-cache
 WORKDIR /app
 COPY --from=builder /go/bin/go-shadowsocks2 /app/
-ENTRYPOINT ["./go-shadowsocks2"]
+ENTRYPOINT go-shadowsocks2 -s "ss://${SS_METHOD}:${SS_PASSWORD}@:8989"
